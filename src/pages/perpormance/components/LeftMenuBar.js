@@ -2,17 +2,19 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import { performanceClickIndex } from 'pages/recoil/recoilState'
 import LocomotiveScroll from 'locomotive-scroll';
+import { useTranslation } from 'react-i18next';
 const LeftMenuBar = () => {
+  const {t} = useTranslation();
   const [clickIndex, setClickIndex] = useRecoilState(performanceClickIndex);
   const [active, setActive] = useState(0);
   const scroll = useRef(null);
   
   const lists = [
-    { capacityTester: 'Calorimeter' },
-    { capacityTester: 'Refrigerator capacity tester' },
-    { capacityTester: 'Airflow measurement tester' },
-    { capacityTester: 'Washing machine capacity tester' },
-    { capacityTester: 'Gas oven capacity tester' }
+    { capacityTester: 'capacityTester.title.1' },
+    { capacityTester: 'capacityTester.title.2' },
+    { capacityTester: 'capacityTester.title.3' },
+    { capacityTester: 'capacityTester.title.4' },
+    { capacityTester: 'capacityTester.title.5' }
   ];
   useEffect(() => {
     scroll.current = new LocomotiveScroll({
@@ -32,7 +34,7 @@ const LeftMenuBar = () => {
       {/* 1024 이상 웹 화면 */}
       {window.innerWidth > 1024 &&  (
         <div className="left-menu"  >
-          <h3>Capacity tester</h3>
+          <h3>{t('nav.1')}</h3>
           <div className="left-menu-item">
             <ul className='menu'>
               {lists.map((list, index) => (
@@ -41,7 +43,7 @@ const LeftMenuBar = () => {
                   onClick={() => clickItem(index)}
                   className={`list py-3 ${active === index ? 'active' : ''}`}
                 >
-                  {list.capacityTester}
+                  {t(`${list.capacityTester}`)}
                 </li>
               ))}
             </ul>

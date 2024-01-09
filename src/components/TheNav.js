@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import i18n from 'i18next';
 const TheNav = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
+  const { t } = useTranslation();
+  const [currentLang, setCurrentLang] = useState(i18n.language);
+
+  const handleLangChange = (lang) => {
+    setCurrentLang(lang);
+    i18n.changeLanguage(lang);
+  };
 
   const openMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -49,7 +58,7 @@ const TheNav = () => {
         <div className="mobile-nav">
           <div className="container">
             <NavLink to="/" className="logo">
-              <img src={require('assets/images/logo/hyuntech-logo.png')} alt='logo'/>
+              <img src={require('assets/images/logo/hyuntech-logo.png')} alt='logo' />
             </NavLink>
           </div>
         </div>
@@ -58,7 +67,7 @@ const TheNav = () => {
           <div className="container">
             <nav className="navbar navbar-expand-md">
               <NavLink to="/" className="navbar-brand">
-                <img src={require('assets/images/logo/hyuntech-logo.png')} alt='logo'/>
+                <img src={require('assets/images/logo/hyuntech-logo.png')} alt='logo' />
               </NavLink>
               {/* Desktop Navbar Categories */}
               <div className="navbar-collapse mean-menu">
@@ -68,7 +77,7 @@ const TheNav = () => {
                       to="/performances"
                       className="nav-link"
                     >
-                      성능 시험기
+                      {t('nav.1')}
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -76,7 +85,7 @@ const TheNav = () => {
                       to="/durabilities"
                       className="nav-link"
                     >
-                      내구성 시험기
+                      {t('nav.2')}
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -88,6 +97,23 @@ const TheNav = () => {
                     </NavLink>
                   </li>
                 </ul>
+
+                <div className="translation-option blex">
+                  <div
+                    className={`ko translation-btn ${currentLang === 'ko' ? 'active' : ''}`}
+                    onClick={() => handleLangChange('ko')}
+                  >
+                    {t('KO')}
+                  </div>
+                  <div className="middle-line"></div>
+                  <div
+                    className={`en translation-btn ${currentLang === 'en' ? 'active' : ''}`}
+                    onClick={() => handleLangChange('en')}
+                  >
+                    {t('EN')}
+                  </div>
+                </div>
+
                 <div>
                   <button
                     className="menu-btn"

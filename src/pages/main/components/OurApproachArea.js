@@ -1,8 +1,10 @@
 import React from 'react';
 //svg import
 import checkIcon from 'assets/images/icon/checkIcon.svg';
+import { useTranslation } from 'react-i18next';
 
 const OurApproachArea = () => {
+  const {t} = useTranslation();
   return (
     <section className="our-approach-area approach">
     <div className="container">
@@ -10,7 +12,7 @@ const OurApproachArea = () => {
       {/* 상단 타이틀 */}
       <div className="section-title">
         <span>World class quality system</span>
-        <p className="approach-main-title">We offer a variety of testing system to suit your needs</p>
+        <p className="approach-main-title">{t('approach.1')}</p>
       </div>
 
       {/* 왼쪽 이미지 */}
@@ -28,7 +30,7 @@ const OurApproachArea = () => {
         {/* 오른쪽 상단 타이틀 */}
         <div className="col-lg-6 approach-right">
           <div className="approach-content">
-            <h3 className="approach-content-title">Hyuntech is a company that mainly manufactures test equipment that satisfies the needs of users. From communication between equipment and users to remote monitoring from outside, usability in various environments is a strength.</h3>
+            <h3 className="approach-content-title">{t('approach.2')}</h3>
 
             {/* 오른쪽 하단 박스 */}
             <div className="row">
@@ -38,7 +40,7 @@ const OurApproachArea = () => {
                     src={checkIcon}
                     alt=""
                   />
-                  <h3 className="mb-0">Optimized specification</h3>
+                  <h3 className="mb-0">{t('approach.3')}</h3>
                 </div>
               </div>
 
@@ -48,7 +50,7 @@ const OurApproachArea = () => {
                     src={checkIcon} 
                     alt=""
                   />
-                  <h3 className="mb-0">Easy / convenient use</h3>
+                  <h3 className="mb-0">{t('approach.4')}</h3>
                 </div>
               </div>
 
@@ -58,7 +60,7 @@ const OurApproachArea = () => {
                     src={checkIcon} 
                     alt=""
                   />
-                  <h3 className="mb-0">Excellent performance / durability</h3>
+                  <h3 className="mb-0">{t('approach.5')}</h3>
                 </div>
               </div>
             </div>

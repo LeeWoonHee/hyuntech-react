@@ -1,0 +1,104 @@
+{
+  "nav" : {
+    "1" : "Capacity tester",
+    "2" : "Durability Tester"
+  },
+  "banner" : {
+    "1" : "We will become a trustworthy company with reliable products.",
+    "2" : "Hyuntech Co., Ltd is doing its best to give greater satisfaction to all stakeholders through ethical / transparent management."
+  },
+  "features" : {
+    "1" : "Features",
+    "2" : "We build a system that fits your needs.",
+    "3" : "Development points",
+    "4" : "Hyuntech manufactures performance tester and durability tester.",
+    "5" : "Featured products",
+    "6" : "Additional features and conveniences are reflected at the user’s request."
+  },
+  "approach" : {
+    "1" : "We offer a variety of testing system to suit your needs",
+    "2" : "Hyuntech is a company that mainly manufactures test equipment that satisfies the needs of users. From communication between equipment and users to remote monitoring from outside, usability in various environments is a strength.",
+    "3" : "Optimized specification",
+    "4" : "Easy / convenient use",
+    "5" : "Excellent performance / durability"
+  },
+  "team" : {
+    "1" : "Calorimeter",
+    "2" : "Thermodynamic property measurement tester of products",
+    "3" : "Refrigerator performance system",
+    "4" : "Product power consumption and temperature characteristic measurement tester",
+    "5" : "Airflow measurement tester",
+    "6" : "Product air volume/wind speed measurement tester"
+  },
+  "capacityTester" : {
+    "title" : {
+      "1" : "Calorimeter",
+      "2" : "Refrigerator capacity tester",
+      "3" : "Airflow measurement tester",
+      "4" : "Washing machine capacity tester",
+      "5" : "Gas oven capacity tester"
+    },
+    "dec" : {
+      "1" : "It is possible to test the indoor cooling, heating capacity and energy efficiency of the air conditioners according to ISO or other standards. It remotely sets the indoor / outdoor temperature and humidity conditions according to the test standards, determines the stability of the set temperature and humidity, and automatically calculates the data.",
+      "2" : "It is possible to test the indoor cooling, heating capacity and energy efficiency of the air conditioners according to ISO or other standards. It remotely sets the indoor / outdoor temperature and humidity conditions according to the test standards, determines the stability of the set temperature and humidity, and automatically calculates the data.",
+      "3" : "The Airflow measurement tester is a device that measures the wind speed according to the wind volume range and the nozzle based on each test specification. In addition, you can control the setting inlet wind speed/wind volume through the simulator function on the program.\n - Real-time verification of measurement data with dedicated software\n - Measurement of data through test air flow, nozzle setup, and sensor connection\n - Measurement type: Air volume, wind speed\n - Forced blast control: air volume, wind speed\n - Air volume range and usage nozzle settings\n - Output Results Data Graphs\n - Conversion of result data to Excel\n - Sample Fan Power Consumption Measurement",
+      "4" : "The washing machine performance tester is a device that can check the overall performance of washing machine by measuring voltage, current, power, power factor, frequency, RPM, water temperature, flow rate, etc. and can check and analyze the test in real time by communicating with Hyuntech program.\n - Real-time check of measurement data with dedicated software\n - Data measurement through voltage and frequency adjustment and sensor connection for each test sample\n - Connect single-phase 2-wire and 3-wire samples\n - Output voltage and frequency adjustment\n - Two simultaneous tests of washing machine and dryer\n - Real-time analysis of measurement data\n - Output the resulting data graph\n - Raw data Excel conversion\n - Output voltage adjustment",
+      "5" : "The washing machine performance tester is a device that can check the overall performance of washing machine by measuring voltage, current, power, power factor, frequency, RPM, water temperature, flow rate, etc. and can check and analyze the test in real time by communicating with Hyuntech program.\n - Real-time check of measurement data with dedicated software\n - Data measurement through voltage and frequency adjustment and sensor connection for each test sample\n - Connect single-phase 2-wire and 3-wire samples\n - Output voltage and frequency adjustment\n - Two simultaneous tests of washing machine and dryer\n - Real-time analysis of measurement data\n - Output the resulting data graph\n - Raw data Excel conversion\n - Output voltage adjustment"
+    }
+  },
+  "durabilityTester" : {
+    "title" : {
+      "1" : "Temperature & humidity chamber",
+      "2" : "Water bath",
+      "3" : "Salt water spray tester",
+      "4" : "Battery charge/discharge tester",
+      "5" : "Vacuum cleaner DC life tester",
+      "6" : "Automatic door open/close robot",
+      "7" : "DC On/Off Controller",
+      "8" : "Vibration tester",
+      "9" : "8m drop impact tester",
+      "10" : "Dust test chamber"
+    },
+    "dec" : {
+      "1" : "The temperature and humidity chamber is capable of carrying out the test under the required conditions by supplying a specific temperature/humidity. It is required for testing the durability and reliability of the specimen, predicting the durability of the instrument by testing the specimen with excessive climatic conditions beyond the required conditions.",
+      "2" : "The water bath is a facility that supplies water at the temperature desired by the user, and uses a refrigerator and heater to maintain and supply water at a set temperature.\n - Refrigerator, heater automatic control / manual control function\n - Check water temperature by measuring inlet and outlet temperature\n - Temperature Auto-tuning function\n - Precise temperature control via PID controller\n - Display set temperature and actual temperature\n - SUS integrated material that is resistant",
+      "3" : "It is a tester that sprays a certain concentration of salt water into the sample to conduct a standard test.\n - Conduct a test with simple spray/continuous spray\n -The temperature of the saline. Set Spray Time, Rest Tim",
+      "4" : "The Battery charge/discharge tester connects power and load to the battery to repeat charging and discharging. Through Repeating tests, It can verify durability and capacity of the battery.",
+      "5" : "It is a tester that measures the life of the vacuum cleaner and battery. It is suitable for the life test pf cleaner because the voltage and number of tests can be set for each sample and conditions of a test can be changed during the test.\n - Real-time verification of measurement data with dedicated software\n - Set the voltage for each test sample, the number of tests, and proceed with individual tests.\n - Cleaner sample connection (sample count can be adjusted)\n - Output voltage and test time adjustment\n - Test settings for each sample and change settings during the test\n - Output Results Data Graphs\n - Raw Data Excel Conversion\n - Output voltage / On ∙ Off time adjustment",
+      "6" : "The automatic door open/close robot automatically operate the door opening and closing of the sample desired by the user. It can conduct tests under the same conditions.\n - Door opening/closing function by set time/number\n - Set the handle to fit the position of each door\n - measuring distance between Door opening and closing handle and doors",
+      "7" : "The DC On/Off Controller is a facility that tests by controlling the current according to the on/off time set by the user.\n - Display the number of on/off tests\n - Control DC output on/off according to set time\n - DC Power On/OFF time 설정\n - On/Off Test Count Counter Output\n - Control DC current with CW/CCW function",
+      "8" : "Vibration tester is a equipment can reproduces the distribution environment. You can check the change of the sample by repeating up-down/left-right vibration in the frequency range specified by the user.",
+      "9" : "It is a tester can measure the durability of a sample against an external impact, repeating the drop impact test at the set height to reproduce the external impact.",
+      "10" : "It is a tester that checks the change of sample by injecting dust in a closed space and can reproduce the change according to the durability and actual environment of the sample."
+    }
+  },
+  "contact" : {
+    "1" : "Since our establishment in 2008, Hyuntech Co., Ltd has been researching various visions.",
+    "2" : "",
+    "3" : "101-1405, #88, Digital empire 2 \n Sinwon-ro, Yeongtong-gu \n Suwon-si,Gyeonggi-do, Korea 16681",
+    "4" : "82-31-695-6285",
+    "5" : "82-31-695-6287"
+  },
+  "footer" : {
+    "1" : "Capacity Tester",
+    "2" : "Calorimeter",
+    "3" : "Refrigerator capacity tester",
+    "4" : "Airflow measurement tester",
+    "5" : "Washing machine capacity tester",
+    "6" : "Gas oven capacity tester",
+    "7" : "Durability Tester",
+    "8" : "Temperature & humidity chamber",
+    "9" : "Water bath",
+    "10" : "Salt water spray tester",
+    "11" : "Battery charge/discharge system",
+    "12" : "Vacuum cleaner DC life tester",
+    "13" : "Automatic door open/close robot",
+    "14" : "DC On/Off Controller",
+    "15" : "Vibration tester",
+    "16" : "8m drop impact tester",
+    "17" : "Dust test chamber",
+    "18" : "101-1405, #88, Digital empire 2 \n Sinwon-ro, Yeongtong-gu \n Suwon-si,Gyeonggi-do, Korea 16681",
+    "19" : "82-31-695-6285",
+    "20" : "82-31-695-6287"
+  }
+}

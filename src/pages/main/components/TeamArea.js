@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const TeamArea = () => {
+  const {t} = useTranslation();
   return (
     <section className="team-area team-section bg-gray pt-100">
       <div className="container">
@@ -14,13 +16,13 @@ const TeamArea = () => {
             <div className="single-team blex">
               <div className="product-image blex bg-white">
                 <img
-                  src={require('assets/images/calorimeterImage.png')} // 이미지 경로 수정 필요
+                  src={require('assets/images/calorimeterImage.png')} 
                   alt=""
                 />
               </div>
               <div className="team-content pt-100 bg-black">
-                <h3>Calorimeter</h3>
-                <span className="text-xs dec">Thermodynamic property measurement tester of products</span>
+                <h3>{t('team.1')}</h3>
+                <span className="text-xs dec">{t('team.2')}</span>
               </div>
             </div>
           </div>
@@ -35,8 +37,8 @@ const TeamArea = () => {
               </div>
 
               <div className="team-content bg-black">
-                <h3>Refrigerator performance system</h3>
-                <span className="text-xs dec">Product power consumption and temperature characteristic measurement tester</span>
+                <h3>{t('team.3')}</h3>
+                <span className="text-xs dec">{t('team.4')}</span>
               </div>
             </div>
           </div>
@@ -51,8 +53,8 @@ const TeamArea = () => {
               </div>
 
               <div className="team-content bg-black">
-                <h3>Airflow measurement tester</h3>
-                <span className="text-xs dec">Product air volume/wind speed measurement tester</span>
+                <h3>{t('team.5')}</h3>
+                <span className="text-xs dec">{t('team.6')}</span>
               </div>
             </div>
           </div>

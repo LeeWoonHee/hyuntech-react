@@ -3,8 +3,10 @@ import React from 'react';
 import listIcon from 'assets/images/icon/listIcon.svg';
 import fileListIcon from 'assets/images/icon/fileListIcon.svg';
 import upGraphIcon from 'assets/images/icon/upGraphIcon.svg';
+import { useTranslation } from 'react-i18next';
 
 const FeatureArea = () => {
+  const { t } = useTranslation();
   return (
     <section className="feature-area feature-area-two main-feature">
       <div className="container">
@@ -22,9 +24,9 @@ const FeatureArea = () => {
                       className="icon"
                     />
                   </div>
-                  <h3 className="pt-0 blex feature-top-title">Features</h3>
+                  <h3 className="pt-0 blex feature-top-title">{t('features.1')}</h3>
                 </div>
-                <p className="sub-title text-sm">We build a system that fits your needs.</p>
+                <p className="sub-title text-sm">{t('features.2')}</p>
               </div>
             </div>
           </div>
@@ -41,9 +43,9 @@ const FeatureArea = () => {
                       className="icon"
                     />
                   </div>
-                  <h3 className="pt-0 blex feature-top-title">Development points</h3>
+                  <h3 className="pt-0 blex feature-top-title">{t('features.3')}</h3>
                 </div>
-                <p className="sub-title text-sm">Hyuntech manufactures performance tester and durability tester.</p>
+                <p className="sub-title text-sm">{t('features.4')}</p>
               </div>
             </div>
           </div>
@@ -60,9 +62,9 @@ const FeatureArea = () => {
                       className="icon"
                     />
                   </div>
-                  <h3 className="pt-0 blex feature-top-title">Featured products</h3>
+                  <h3 className="pt-0 blex feature-top-title">{t('features.5')}</h3>
                 </div>
-                <p className="sub-title text-sm">Additional features and conveniences are reflected at the user’s request.</p>
+                <p className="sub-title text-sm">{t('features.6')}</p>
               </div>
             </div>
           </div>

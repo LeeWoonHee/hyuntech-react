@@ -2,21 +2,23 @@ import { durabilityClickIndex } from 'pages/recoil/recoilState';
 import React, { useState,useEffect,useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import LocomotiveScroll from 'locomotive-scroll';
+import { useTranslation } from 'react-i18next';
 
 const LeftMenuBar = () => {
+  const {t} = useTranslation();
   const [clickIndex, setClickIndex] = useRecoilState(durabilityClickIndex);
   const [active, setActive] = useState(0);
   const lists = [
-    { durabilityTester: 'Temperature & humidity chamber' },
-    { durabilityTester: 'Water bath' },
-    { durabilityTester: 'Salt water spray tester' },
-    { durabilityTester: 'Battery charge/discharge tester' },
-    { durabilityTester: 'Vacuum cleaner DC life tester' },
-    { durabilityTester: 'Automatic door open/close robot'},
-    { durabilityTester: 'DC On/Off Controller'},
-    { durabilityTester: 'Vibration tester'},
-    { durabilityTester: '8m drop impact tester'},
-    { durabilityTester: 'Dust test chamber'}
+    { durabilityTester: 'durabilityTester.title.1' },
+    { durabilityTester: 'durabilityTester.title.2' },
+    { durabilityTester: 'durabilityTester.title.3' },
+    { durabilityTester: 'durabilityTester.title.4' },
+    { durabilityTester: 'durabilityTester.title.5' },
+    { durabilityTester: 'durabilityTester.title.6'},
+    { durabilityTester: 'durabilityTester.title.7'},
+    { durabilityTester: 'durabilityTester.title.8'},
+    { durabilityTester: 'durabilityTester.title.9'},
+    { durabilityTester: 'durabilityTester.title.10'}
   ];
   const scroll = useRef(null);
 
@@ -48,7 +50,7 @@ const LeftMenuBar = () => {
                   onClick={() => clickItem(index)}
                   className={`list py-3 ${active === index ? 'active' : ''}`}
                 >
-                  {list.durabilityTester}
+                  {t(`${list.durabilityTester}`)}
                 </li>
               ))}
             </ul>
