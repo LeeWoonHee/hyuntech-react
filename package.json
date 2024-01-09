@@ -6,9 +6,19 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.12.3",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-kakao-maps-sdk": "^1.1.24",
+    "react-locomotive-scroll": "^0.2.2",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
+    "recoil": "^0.7.7",
+    "redux": "^5.0.0",
+    "sass": "^1.69.5",
+    "three": "^0.159.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +44,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
+    "autoprefixer": "^10.4.16",
+    "css-loader": "^6.8.1",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.5"
   }
 }

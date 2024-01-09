@@ -1,17 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import TheNav from 'components/TheNav';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'assets/scss/main.scss';
+import 'assets/scss/templateStyle/main.scss';
+import 'assets/css/style.css';
+import 'assets/css/responsive.css';
+import 'assets/css/bootstrap.min.css';
+import { RecoilRoot } from 'recoil';
+import Router from 'Router';
+import { BrowserRouter } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <RecoilRoot>
+        <BrowserRouter>
+            <TheNav />
+            <Router />
+        </BrowserRouter>
+    </RecoilRoot>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
