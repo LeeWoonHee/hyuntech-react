@@ -4,11 +4,11 @@ import { performanceClickIndex } from 'pages/recoil/recoilState'
 import LocomotiveScroll from 'locomotive-scroll';
 import { useTranslation } from 'react-i18next';
 const LeftMenuBar = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [clickIndex, setClickIndex] = useRecoilState(performanceClickIndex);
   const [active, setActive] = useState(0);
   const scroll = useRef(null);
-  
+
   const lists = [
     { capacityTester: 'capacityTester.title.1' },
     { capacityTester: 'capacityTester.title.2' },
@@ -32,7 +32,7 @@ const LeftMenuBar = () => {
   return (
     <div className="left-menu-bar" data-scroll data-scroll-sticky data-scroll-target=".main">
       {/* 1024 이상 웹 화면 */}
-      {window.innerWidth > 1024 &&  (
+      {window.innerWidth > 1024 && (
         <div className="left-menu"  >
           <h3>{t('nav.1')}</h3>
           <div className="left-menu-item">

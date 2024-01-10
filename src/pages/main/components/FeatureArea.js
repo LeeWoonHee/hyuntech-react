@@ -12,7 +12,6 @@ const FeatureArea = () => {
       <div className="container">
         <div className="row feature-row">
 
-          {/* 시스템 특징 박스 */}
           <div className="col-lg-4 col-sm-6 feature-box">
             <div className="single-feature bg-white">
               <div>
@@ -31,7 +30,6 @@ const FeatureArea = () => {
             </div>
           </div>
 
-          {/* 주요 개발 시스템 박스 */}
           <div className="col-lg-4 col-sm-6 feature-box">
             <div className="single-feature bg-white">
               <div>
@@ -50,7 +48,6 @@ const FeatureArea = () => {
             </div>
           </div>
 
-          {/* 시스템 제품 박스 */}
           <div className="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0 feature-box">
             <div className="single-feature bg-white">
               <div>

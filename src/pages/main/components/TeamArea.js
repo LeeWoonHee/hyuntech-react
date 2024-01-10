@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const TeamArea = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <section className="team-area team-section bg-gray pt-100">
       <div className="container">
@@ -16,7 +16,7 @@ const TeamArea = () => {
             <div className="single-team blex">
               <div className="product-image blex bg-white">
                 <img
-                  src={require('assets/images/calorimeterImage.png')} 
+                  src={require('assets/images/calorimeterImage.png')}
                   alt=""
                 />
               </div>
@@ -31,7 +31,7 @@ const TeamArea = () => {
             <div className='single-team blex'>
               <div className="product-image blex bg-white">
                 <img
-                  src={require('assets/images/refrigeratorImage.png')} // 이미지 경로 수정 필요
+                  src={require('assets/images/refrigeratorImage.png')}
                   alt=""
                 />
               </div>

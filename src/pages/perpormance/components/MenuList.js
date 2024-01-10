@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const MenuList = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [clickIndex, setClickIndex] = useRecoilState(performanceClickIndex);
   const scroll = useRef(null);
   const footerIndex = useLocation().state;
@@ -44,12 +44,12 @@ const MenuList = () => {
     {
       image: require('assets/images/performance-airflow.png'),
       title: 'capacityTester.title.3',
-      desc:'capacityTester.dec.3' 
+      desc: 'capacityTester.dec.3'
     },
     {
       image: require('assets/images/performance-washer.png'),
       title: 'capacityTester.title.4',
-      desc:'capacityTester.dec.4'
+      desc: 'capacityTester.dec.4'
     },
     {
       image: require('assets/images/performance-gas.png'),
@@ -65,14 +65,11 @@ const MenuList = () => {
           className={`performance-item ${window.innerWidth < 1024 ? 'px-0' : ''}`}
           style={{ backgroundColor: '#fdfdfd' }}
         >
-          {/* 제품 이미지 */}
           <div className="image">
             <img src={item.image} alt="" className="blex" />
           </div>
           <div className="title-box">
-            {/* 제품 타이틀 */}
             <div className="top-title">{t(`${item.title}`)}</div>
-            {/* 제품 설명 */}
             <div className="dec">{t(`${item.desc}`)}</div>
           </div>
         </div>

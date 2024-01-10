@@ -3,9 +3,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-
 const TheFooter = () => {
-  const {t} = useTranslation();
+
+  const { t } = useTranslation();
   const navigation = useNavigate();
 
   const performances = [
@@ -30,12 +30,12 @@ const TheFooter = () => {
   ];
 
   const goToPerformance = (index) => {
-    navigation(`/performances`, {state: index})
+    navigation(`/performances`, { state: index })
   };
 
   const goToDurability = (index) => {
-    navigation(`/durabilities`, {state : index})
-    
+    navigation(`/durabilities`, { state: index })
+
   };
 
 

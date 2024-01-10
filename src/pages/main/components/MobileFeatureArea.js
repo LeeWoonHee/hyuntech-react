@@ -10,7 +10,6 @@ const MobileFeatureArea = () => {
       <div className="container">
         <div className="row feature-row">
 
-          {/* 시스템 특징 박스 */}
           <div className="col-lg-4 col-sm-6 feature-box">
             <div className="single-feature bg-white">
               <div>
@@ -29,7 +28,6 @@ const MobileFeatureArea = () => {
             </div>
           </div>
 
-          {/* 주요 개발 시스템 박스 */}
           <div className="col-lg-4 col-sm-6 feature-box">
             <div className="single-feature bg-white">
               <div>
@@ -48,7 +46,6 @@ const MobileFeatureArea = () => {
             </div>
           </div>
 
-          {/* 시스템 제품 박스 */}
           <div className="col-lg-4 col-sm-6 feature-box">
             <div className="single-feature bg-white">
               <div>

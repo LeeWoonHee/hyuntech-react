@@ -6,8 +6,8 @@ const Durability = () => {
   return (
     <div className='durability-area pb-0'>
       <div className='durability-container'>
-        <LeftMenuBar/>
-        <MenuList/>
+        <LeftMenuBar />
+        <MenuList />
       </div>
     </div>
   );

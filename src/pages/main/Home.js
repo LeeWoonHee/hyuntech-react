@@ -1,11 +1,9 @@
-import React, {useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 import BannerArea from './components/BannerArea';
 import MobileFeatureArea from './components/MobileFeatureArea';
 import OurApproachArea from './components/OurApproachArea';
 import TeamArea from './components/TeamArea';
 import LocomotiveScroll from 'locomotive-scroll';
-
-
 
 
 const Home = () => {
@@ -22,10 +20,10 @@ const Home = () => {
   }, []);
   return (
     <div className="home">
-      <BannerArea/>
-      <MobileFeatureArea/>
-      <OurApproachArea/>
-      <TeamArea/>
+      <BannerArea />
+      <MobileFeatureArea />
+      <OurApproachArea />
+      <TeamArea />
     </div>
   );
 };

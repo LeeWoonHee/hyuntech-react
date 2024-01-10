@@ -1,11 +1,11 @@
 import { durabilityClickIndex } from 'pages/recoil/recoilState';
-import React, { useState,useEffect,useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import LocomotiveScroll from 'locomotive-scroll';
 import { useTranslation } from 'react-i18next';
 
 const LeftMenuBar = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [clickIndex, setClickIndex] = useRecoilState(durabilityClickIndex);
   const [active, setActive] = useState(0);
   const lists = [
@@ -14,11 +14,11 @@ const LeftMenuBar = () => {
     { durabilityTester: 'durabilityTester.title.3' },
     { durabilityTester: 'durabilityTester.title.4' },
     { durabilityTester: 'durabilityTester.title.5' },
-    { durabilityTester: 'durabilityTester.title.6'},
-    { durabilityTester: 'durabilityTester.title.7'},
-    { durabilityTester: 'durabilityTester.title.8'},
-    { durabilityTester: 'durabilityTester.title.9'},
-    { durabilityTester: 'durabilityTester.title.10'}
+    { durabilityTester: 'durabilityTester.title.6' },
+    { durabilityTester: 'durabilityTester.title.7' },
+    { durabilityTester: 'durabilityTester.title.8' },
+    { durabilityTester: 'durabilityTester.title.9' },
+    { durabilityTester: 'durabilityTester.title.10' }
   ];
   const scroll = useRef(null);
 
